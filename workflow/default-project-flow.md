@@ -75,3 +75,14 @@ After major work, ask:
 - what should become a decision, checklist, or template update
 
 Then update this methodology repo or the project adoption docs.
+
+## Multi-repo note
+
+If the product spans multiple repositories, keep the same flow but add one more rule:
+
+- any task that changes interfaces, contracts, or shared product behavior across repos needs a cross-repo brief and coordinated verification plan
+
+Use:
+
+- `workflow/multi-repo-delivery.md`
+- `templates/cross-repo-task-brief.md`

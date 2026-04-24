@@ -9,6 +9,7 @@ This repo is designed to help teams start new projects with:
 - cross-object impact review before work is declared complete
 - layered verification instead of "looks done"
 - reusable templates that work across Claude, Codex, Cursor, ChatGPT, and non-AI workflows
+- support for both single-repo and multi-repo product setups
 
 ## Core idea
 
@@ -57,6 +58,28 @@ That keeps AI-assisted work from becoming siloed, fragile, or dependent on one p
 4. Use `templates/cross-object-impact-review.md` before implementation.
 5. Update `CURRENT.md`, `DECISIONS.md`, and `TASKS.md` as work progresses.
 6. Feed new learnings back into this methodology repo.
+
+## Single-repo vs multi-repo
+
+This method supports both:
+
+- **single-repo projects**
+  One repo contains the app or service plus its delivery docs.
+- **multi-repo products**
+  Frontend, backend, mobile, infra, or shared-contract repos are separate, but the same planning and verification method is used across all of them.
+
+For multi-repo setups:
+
+- keep this methodology repo as the team-level framework
+- keep local startup docs inside each implementation repo
+- use a shared product/task brief when work crosses repositories
+- verify interface contracts, release order, and cross-repo regression impact explicitly
+
+See:
+
+- `workflow/multi-repo-delivery.md`
+- `templates/cross-repo-task-brief.md`
+- `examples/multi-repo-adoption.md`
 
 ## What this is inspired by
 

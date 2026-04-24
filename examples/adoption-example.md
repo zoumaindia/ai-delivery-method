@@ -19,6 +19,17 @@ For each project:
 4. keep the backlog and active state inside the project repo
 5. feed stable learnings back into the central methodology repo
 
+## Multi-repo adoption
+
+If one product spans multiple repos:
+
+1. keep this repo as the central methodology source
+2. keep startup docs and active backlog local to each implementation repo
+3. use a shared cross-repo task brief whenever a change spans interfaces or flows
+4. verify release order and end-to-end behavior explicitly
+
+See `examples/multi-repo-adoption.md`.
+
 ## Upgrade loop
 
 When a repeated failure or blind spot is discovered:
